@@ -64,7 +64,7 @@ int main() {
   // as novas linhas (\n) não atrapalhem a leitura do caractere.
   scanf(" %c", &carta1Estado);
   
-  printf("\nInforme o código da carta (letra do Estado seguido de um número de 01 a 04, ex: A01, B03): ");
+  printf("\nInforme o código da carta (letra do Estado + número de 01 a 04, ex: A01, B03): ");
   scanf("%s", carta1Codigo);
 
   printf("\nInforme o nome da cidade: ");
