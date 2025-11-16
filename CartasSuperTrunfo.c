@@ -27,7 +27,7 @@ int main() {
   int carta1Populacao;
   // Área (em km²): A área da cidade em quilômetros quadrados.
   float carta1AreaCidade;
-  // PIB: O Produto Interno Bruto da cidade.
+  // PIB: O Produto Interno Bruto da cidade (em bilhões de reais).
   float carta1PIB;
   // Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade.
   int carta1NumeroPontosTuristicos;
@@ -48,7 +48,7 @@ int main() {
   int carta2Populacao;
   // Área (em km²): A área da cidade em quilômetros quadrados.
   float carta2AreaCidade;
-  // PIB: O Produto Interno Bruto da cidade.
+  // PIB: O Produto Interno Bruto da cidade (em bilhões de reais).
   float carta2PIB;
   // Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade.
   int carta2NumeroPontosTuristicos;
