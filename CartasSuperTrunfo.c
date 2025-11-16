@@ -83,7 +83,7 @@ int main() {
   printf("\nInforme a área da cidade em quilômetros quadrados: ");
   scanf("%f", &carta1AreaCidade);
 
-  printf("\nInforme o valor do PIB da cidade: ");
+  printf("\nInforme o valor do PIB da cidade (em bilhões de reais): ");
   scanf("%f", &carta1PIB);
 
   printf("\nInforme o número de pontos turísticos da cidade: ");
@@ -119,7 +119,7 @@ int main() {
   printf("\nInforme a área da cidade em quilômetros quadrados: ");
   scanf("%f", &carta2AreaCidade);
 
-  printf("\nInforme o valor do PIB da cidade: ");
+  printf("\nInforme o valor do PIB da cidade (em bilhões de reais): ");
   scanf("%f", &carta2PIB);
 
   printf("\nInforme o número de pontos turísticos da cidade: ");
