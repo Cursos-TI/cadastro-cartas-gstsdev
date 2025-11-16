@@ -64,7 +64,12 @@ int main() {
   scanf("%s", carta1Codigo);
 
   printf("\nInforme o nome da cidade: ");
-  scanf("%s", carta1Cidade);
+  // Devemos executar a função `getchar()` para evitar que o `fgets`
+  // leia o caractere \n (nova linha) dos `scanf`s, permitindo
+  // a entrada de texto.
+  getchar();
+  // Utilizamos `fgets()` para permitir nomes de cidades com espaço
+  fgets(carta1Cidade, 50, stdin);
 
   printf("\nInforme o número de habitantes da cidade: ");
   scanf("%d", &carta1Populacao);
@@ -91,7 +96,12 @@ int main() {
   scanf("%s", carta2Codigo);
 
   printf("\nInforme o nome da cidade: ");
-  scanf("%s", carta2Cidade);
+  // Devemos executar a função `getchar()` para evitar que o `fgets`
+  // leia o caractere \n (nova linha) dos `scanf`s, permitindo
+  // a entrada de texto.
+  getchar();
+  // Utilizamos `fgets()` para permitir nomes de cidades com espaço
+  fgets(carta2Cidade, 50, stdin);
 
   printf("\nInforme o número de habitantes da cidade: ");
   scanf("%d", &carta2Populacao);
@@ -117,7 +127,7 @@ int main() {
   
   printf("Código: %s\n", carta1Codigo);
 
-  printf("Nome da Cidade: %s\n", carta1Cidade);
+  printf("Nome da Cidade: %s", carta1Cidade);
 
   printf("População: %d habitantes\n", carta1Populacao);
 
@@ -137,7 +147,7 @@ int main() {
   
   printf("Código: %s\n", carta2Codigo);
 
-  printf("Nome da Cidade: %s\n", carta2Cidade);
+  printf("Nome da Cidade: %s", carta2Cidade);
 
   printf("População: %d habitantes\n", carta2Populacao);
 
