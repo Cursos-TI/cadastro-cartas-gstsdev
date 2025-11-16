@@ -31,6 +31,11 @@ int main() {
   float carta1PIB;
   // Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade.
   int carta1NumeroPontosTuristicos;
+  // Densidade populacional: a razão entre a população e área da cidade.
+  float carta1DensidadePopulacional;
+  // PIB per capita: a razão entre a o PIB da cidade e sua população.
+  // Indica a riqueza média por pessoa.
+  float carta1PIBPerCapita;
 
   // Dados da Carta 2
   
@@ -52,6 +57,11 @@ int main() {
   float carta2PIB;
   // Número de Pontos Turísticos: A quantidade de pontos turísticos na cidade.
   int carta2NumeroPontosTuristicos;
+  // Densidade populacional: a razão entre a população e área da cidade.
+  float carta2DensidadePopulacional;
+  // PIB per capita: a razão entre a o PIB da cidade e sua população.
+  // Indica a riqueza média por pessoa.
+  float carta2PIBPerCapita;
 
   // Área para entrada de dados
 
@@ -89,6 +99,17 @@ int main() {
   printf("\nInforme o número de pontos turísticos da cidade: ");
   scanf("%d", &carta1NumeroPontosTuristicos);
 
+  // Calcula a densidade populacional, utilizando a razão
+  // entre o número de habitantes e àrea da cidade.
+  // Realizamos o casting do valor da população para `float`.
+  carta1DensidadePopulacional = (float) carta1Populacao / carta1AreaCidade;
+
+  // Calcula o PIB per capita, utilizando a razão entre o PIB
+  // e o número de habitantes. Multiplicamos o valor do PIB por 1 bilhão,
+  // para usar a mesma unidade que o número de habitantes. Realizamos o 
+  // casting do valor da populção para `float`.
+  carta1PIBPerCapita = carta1PIB * 1000000000 / (float) carta1Populacao;
+
   printf("\n=================\n");
 
   // Insere os dados da carta 2
@@ -125,6 +146,17 @@ int main() {
   printf("\nInforme o número de pontos turísticos da cidade: ");
   scanf("%d", &carta2NumeroPontosTuristicos);
 
+  // Calcula a densidade populacional, utilizando a razão
+  // entre o número de habitantes e àrea da cidade.
+  // Realizamos o casting do valor da população para `float`.
+  carta2DensidadePopulacional = (float) carta2Populacao / carta2AreaCidade;
+
+  // Calcula o PIB per capita, utilizando a razão entre o PIB
+  // e o número de habitantes. Multiplicamos o valor do PIB por 1 bilhão,
+  // para usar a mesma unidade que o número de habitantes. Realizamos o 
+  // casting do valor da populção para `float`.
+  carta2PIBPerCapita = carta2PIB * 1000000000 / (float) carta2Populacao;
+
   printf("\n=================\n");
 
   // Área para exibição dos dados da cidade
@@ -146,6 +178,10 @@ int main() {
   printf("PIB: %.2f bilhões de reais\n", carta1PIB);
 
   printf("Número de Pontos Turísticos: %d\n", carta1NumeroPontosTuristicos);
+  
+  printf("Densidade Populacional: %.2f hab/km²\n", carta1DensidadePopulacional);
+  
+  printf("PIB per Capita: %.2f reais\n", carta1PIBPerCapita);
 
   printf("==========================\n");
 
@@ -166,6 +202,10 @@ int main() {
   printf("PIB: %.2f bilhões de reais\n", carta2PIB);
 
   printf("Número de Pontos Turísticos: %d\n", carta2NumeroPontosTuristicos);
+
+  printf("Densidade Populacional: %.2f hab/km²\n", carta2DensidadePopulacional);
+  
+  printf("PIB per Capita: %.2f reais\n", carta2PIBPerCapita);
 
   printf("==========================\n");
 
