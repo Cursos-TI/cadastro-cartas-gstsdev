@@ -137,7 +137,7 @@ int main() {
 
   printf("Área: %.2f km²\n", carta1AreaCidade);
 
-  printf("PIB: %.2f\n", carta1PIB);
+  printf("PIB: %.2f bilhões de reais\n", carta1PIB);
 
   printf("Número de Pontos Turísticos: %d\n", carta1NumeroPontosTuristicos);
 
@@ -157,7 +157,7 @@ int main() {
 
   printf("Área: %.2f km²\n", carta2AreaCidade);
 
-  printf("PIB: %.2f\n", carta2PIB);
+  printf("PIB: %.2f bilhões de reais\n", carta2PIB);
 
   printf("Número de Pontos Turísticos: %d\n", carta2NumeroPontosTuristicos);
 
