@@ -58,6 +58,8 @@ int main() {
   printf("==== Carta 1 ====\n");
 
   printf("Informe o Estado da carta (de A a H): ");
+  // Utilizamos um espaço em branco antes do %c para garantir que
+  // as novas linhas (\n) não atrapalhem a leitura do caractere.
   scanf(" %c", &carta1Estado);
   
   printf("\nInforme o código da carta (letra do Estado seguido de um número de 01 a 04, ex: A01, B03): ");
@@ -90,6 +92,8 @@ int main() {
   printf("==== Carta 2 ====\n");
 
   printf("Informe o Estado da carta (de A a H): ");
+  // Utilizamos um espaço em branco antes do %c para garantir que
+  // as novas linhas (\n) não atrapalhem a leitura do caractere.
   scanf(" %c", &carta2Estado);
   
   printf("\nInforme o código da carta (letra do Estado + número de 01 a 04, ex: A01, B03): ");
