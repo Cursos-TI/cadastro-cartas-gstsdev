@@ -87,7 +87,7 @@ int main() {
   printf("Informe o Estado da carta (de A a H): ");
   scanf(" %c", &carta2Estado);
   
-  printf("\nInforme o código da carta (letra do Estado seguido de um número de 01 a 04, ex: A01, B03): ");
+  printf("\nInforme o código da carta (letra do Estado + número de 01 a 04, ex: A01, B03): ");
   scanf("%s", carta2Codigo);
 
   printf("\nInforme o nome da cidade: ");
@@ -121,7 +121,7 @@ int main() {
 
   printf("População da cidade: %d habitantes\n", carta1Populacao);
 
-  printf("Área da cidade: %.2f quilômetros quadrados\n", carta1AreaCidade);
+  printf("Área da cidade: %.2f km²\n", carta1AreaCidade);
 
   printf("PIB da cidade: %.2f\n", carta1PIB);
 
@@ -141,7 +141,7 @@ int main() {
 
   printf("População da cidade: %d habitantes\n", carta2Populacao);
 
-  printf("Área da cidade: %.2f quilômetros quadrados\n", carta2AreaCidade);
+  printf("Área da cidade: %.2f km²\n", carta2AreaCidade);
 
   printf("PIB da cidade: %.2f\n", carta2PIB);
 
