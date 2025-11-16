@@ -1,4 +1,6 @@
 #include <stdio.h>
+// include a função `strcspn`
+#include <string.h>
 
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das cartas
